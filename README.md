@@ -18,6 +18,6 @@ MagnateNotes is a note taking application built using:
 
 
 ## Screenshots
-![Screen-1](/screenshots/screen-1.png)
+![Screen-1](/screenshots/Screen-1.png)
 
-![Screen-2](/screenshots/screen-2.png)
+![Screen-2](/screenshots/Screen-2.png)
