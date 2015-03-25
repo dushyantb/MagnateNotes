@@ -6,7 +6,6 @@ MagnateNotes is a note taking application built using:
 - GoLang (WebService)
 - MongoDB
 - AngularJS (FrontEnd)
-- Login with Facebook 
 
 ## Installation
 
