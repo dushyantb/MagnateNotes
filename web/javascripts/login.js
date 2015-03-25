@@ -24,7 +24,7 @@ angular.module('loginApp', ['facebook'])
 
       $scope.createNote = function(){
         ++$scope.maxId;
-        var notesHtml = '<li id="li_' + $scope.maxId + '"><section><a href="#" ng-click="deleteNote($event)"><img id="' + $scope.maxId + '" src="images/deleteNote.png" alt="Delete Note"></a><a href="#" ng-click="saveNote($event)"><img id="' + $scope.maxId + '" src="images/saveNote.png" alt="Save Note"></a><textarea ng-init=text_' + $scope.maxId + '="' + $scope.noteValue + '" ng-model=text_' + $scope.maxId + ' id=text_' + $scope.maxId + '></textarea></section></li>';
+        var notesHtml = '<li id="li_' + $scope.maxId + '"><section><a href="#" ng-click="deleteNote($event)"><img id="' + $scope.maxId + '" src="images/deleteNote.png" alt="Delete Note"></a><a href="#" ng-click="saveNote($event)"><img id="' + $scope.maxId + '" src="images/saveNote.png" alt="Save Note"></a><textarea ng-model=text_' + $scope.maxId + ' id=text_' + $scope.maxId + '></textarea></section></li>';
         $scope.notesHtml= notesHtml;
         $scope.createNotes();
       };
