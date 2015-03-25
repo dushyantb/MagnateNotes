@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css" />
+    <script src="javascripts/angular.js"></script>
+    <script src="javascripts/angular-facebook.js"></script>
+    <script src="javascripts/login.js"></script>
+    <link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
+    <title>Magnate Notes</title>
+    <link rel="shortcut icon" href="images/note-icon.png" />
+  </head>
+
+  <body ng-app="loginApp" ng-controller="loginController">
+    <div style="color:white">
+      <div style="position:relative;">
+        
+        <p ng-show="!logged" ng-disabled="!facebookReady" class="header"> Magnate Notes </p>
+        
+        <div class="homeDiv">
+            <input type="image" src="images/fb.png" alt="" ng-show="!logged" ng-disabled="!facebookReady" ng-click="IntentLogin()"/>
+            
+            <p style="display:inline;font-size:14px;font-family:Trebuchet MS;" ng-show="logged">Hi,</p>
+            <p style="display:inline;font-size:14px;font-family:Trebuchet MS;" ng-show="logged"><strong> {{user.first_name}} {{user.last_name}}&nbsp; &nbsp; </strong></p>
+            <button style="display:inline;margin:5;" type="button" class="btn btn-danger btn-large" ng-show="logged" ng-disabled="!facebookReady" ng-click="logout()">Logout</button>
+            
+        </div>
+        
+        <a ng-disabled="!facebookReady" ng-show="logged" href='' ng-click="createNote()"><img src="images/newNote.png"></img></a>
+      
+      </div>
+
+      <div ng-show="!logged">
+        <br><br>
+        <p style="text-align:center;font-family:Trebuchet MS;font-size:large;font-weight:bold;">!!! Create & Maintain Notes Online !!!</p>
+      </div>
+    </div>
+
+    <div>
+      <ul id="ul" dynamic="html">
+      </ul>
+    </div>
+
+    <div>
+ 
+  </body>
+</html>
